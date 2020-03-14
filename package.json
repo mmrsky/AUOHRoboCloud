@@ -2,7 +2,7 @@
   "name": "auohrobocloud",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
@@ -20,6 +20,5 @@
   "homepage": "https://github.com/mmrsky/AUOHRoboCloud#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "save": "^2.4.0"
   }
 }
