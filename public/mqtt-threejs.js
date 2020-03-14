@@ -18,13 +18,25 @@ camera.lookAt(scene.position);
 renderer.setSize(width, height);
 three_view.appendChild(renderer.domElement);
 
-
+// Plane
+{
+let plane = new THREE.PlaneBufferGeometry(40,40);
+let material = new THREE.MeshPhongMaterial({
+    color: 0xAAAAAA,
+    specular: 0x101010
+})
+let mesh = new THREE.Mesh(geometry,material);
+}
+scene.add(mesh);
+{
 let geometry = new THREE.BoxGeometry(1,1,1);
 let material = new THREE.MeshLambertMaterial({
     color: 0xff0000
 });
 
 let mesh = new THREE.Mesh(geometry, material);
+}
+
 scene.add(mesh);
 
 let light = new THREE.DirectionalLight(0xAAAAAA, 1.3);
